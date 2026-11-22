@@ -9,13 +9,13 @@ def ngl():
     def deviceId():
         characters = string.ascii_lowercase + string.digits
 
-        part1 = ''.join(random.choices(characters, k=8))
-        part2 = ''.join(random.choices(characters, k=4))
+        part2 = ''.join(random.choices(characters, k=8))
         part3 = ''.join(random.choices(characters, k=4))
         part4 = ''.join(random.choices(characters, k=4))
-        part5 = ''.join(random.choices(characters, k=12))
+        part5 = ''.join(random.choices(characters, k=4))
+        part6 = ''.join(random.choices(characters, k=12))
 
-        device_id = f"{part1}-{part2}-{part3}-{part4}-{part5}"
+        device_id = f"{part2}-{part3}-{part4}-{part5}-{part6}"
 
         return device_id
     
